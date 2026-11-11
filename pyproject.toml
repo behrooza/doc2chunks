@@ -23,4 +23,4 @@ where = ["src"]
 testpaths = ["tests"]
 
 [tool.mypy]
-ignore_missing_imoprs = true
+ignore_missing_imports = true
