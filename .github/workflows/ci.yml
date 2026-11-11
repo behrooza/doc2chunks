@@ -3,17 +3,17 @@ name: CI
 on:
     pull_request:
     push:
-        braches: [main]
+        branches: [main]
 
 jobs:
     test:
-        runs-on: ubunto-latest
+        runs-on: ubuntu-latest
         steps:
-            -uses: actions/checkout@v4
-            -uses: actions/step-python@v5
-            with:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-python@v5
+              with:
                 python-version: "3.12"
-            -run: pip install -e ".[dev]"
-            -run: ruff check .
-            -run: mypy src
-            -run: pytest
+            - run: pip install -e ".[dev]"
+            - run: ruff check .
+            - run: mypy src
+            - run: pytest
