@@ -10,7 +10,7 @@ dependencies = [
     "pymupdf4llm",
     "fastapi",
     "python-multipart",
-    "unicorn",
+    "uvicorn",
 ]
 
 [project.optional-dependencies]
