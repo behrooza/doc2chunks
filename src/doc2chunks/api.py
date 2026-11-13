@@ -16,7 +16,7 @@ class ConvertResponse(BaseModel):
     markdown: str
     chunks: list[str]
 
-@app.post("/v1/convert", response_model = ConvertResponse)
+@app.post("/v1/conversions", response_model = ConvertResponse)
 async def convert(
         file: UploadFile, chunk_size: int=1000, overlap: int=100) -> ConvertResponse:
     """Convert a PDF or DOCX file to markdown and split it into chunks."""
