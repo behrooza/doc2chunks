@@ -29,7 +29,7 @@ Access the API in your browser uaing http://127.0.0.1:8000/docs
 ## Example
 
 ```
-curl -X POST "http://127.0.0.1:8000/v1/convert?chunk_size=500&overlap=50" -F "file=@tests/fixtures/sample.pdf"
+curl -X POST "http://127.0.0.1:8000/v1/conversions?chunk_size=500&overlap=50" -F "file=@tests/fixtures/sample.pdf"
 ```
 
 Response:
